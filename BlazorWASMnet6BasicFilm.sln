@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWASMnet6BasicFilm.Server", "BlazorWASMnet6BasicFilm\Server\BlazorWASMnet6BasicFilm.Server.csproj", "{B19A1685-BCFC-40AF-A285-1D2391E42125}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWASMnet6BasicFilm.Client", "BlazorWASMnet6BasicFilm\Client\BlazorWASMnet6BasicFilm.Client.csproj", "{BFF8C0B1-DDA7-47A3-A3F8-6C08673804A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWASMnet6BasicFilm.Shared", "BlazorWASMnet6BasicFilm\Shared\BlazorWASMnet6BasicFilm.Shared.csproj", "{5759C512-76FF-4770-A65F-DC80D10C14C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B19A1685-BCFC-40AF-A285-1D2391E42125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B19A1685-BCFC-40AF-A285-1D2391E42125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B19A1685-BCFC-40AF-A285-1D2391E42125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B19A1685-BCFC-40AF-A285-1D2391E42125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFF8C0B1-DDA7-47A3-A3F8-6C08673804A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFF8C0B1-DDA7-47A3-A3F8-6C08673804A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFF8C0B1-DDA7-47A3-A3F8-6C08673804A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFF8C0B1-DDA7-47A3-A3F8-6C08673804A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5759C512-76FF-4770-A65F-DC80D10C14C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5759C512-76FF-4770-A65F-DC80D10C14C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5759C512-76FF-4770-A65F-DC80D10C14C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5759C512-76FF-4770-A65F-DC80D10C14C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61195DF6-765E-47BB-A2A3-89339D5A555B}
+	EndGlobalSection
+EndGlobal

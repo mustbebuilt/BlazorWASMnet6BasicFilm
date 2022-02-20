@@ -1,0 +1,34 @@
+﻿@page "/films"
+@inject IFilmService FilmService
+@inject NavigationManager NavigationManager
+
+<PageTitle>Films</PageTitle>
+
+<h3>Films</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Film Name</th>
+            <th>Certificate</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var film in FilmService.Films)
+        {
+            <tr>
+                <td>@film.FilmTitle</td>
+                <td>@film.FilmCertificate</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await FilmService.GetAllFilms();
+    }
+
+}
