@@ -1,0 +1,30 @@
+﻿@page "/SingleFilm/{FilmID:int}"
+@inject IFilmService FilmService
+@inject NavigationManager NavigationManager
+@inject HttpClient Http
+
+<PageTitle>Films</PageTitle>
+
+                <h3>@IndieFilm.FilmTitle</h3>
+                <p>@IndieFilm.FilmDescription</p>
+
+
+@code {
+    [Parameter]
+    public int? FilmID {get; set;}
+
+    Film IndieFilm = new Film();
+
+    //protected override async Task OnInitializedAsync()
+    //{
+    //    await FilmService.GetAllFilms();
+    //}
+
+       protected override async Task OnParametersSetAsync()
+    {
+
+            IndieFilm =  await FilmService.GetSingleFilm((int)FilmID);
+
+    }
+
+}

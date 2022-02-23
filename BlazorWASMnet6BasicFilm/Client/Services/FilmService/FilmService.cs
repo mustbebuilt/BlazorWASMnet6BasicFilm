@@ -24,5 +24,13 @@ namespace BlazorWASMnet6BasicFilm.Client.Services.FilmService
                 Films = result;
         }
 
+        public async Task<Film> GetSingleFilm(int id)
+        {
+            var result = await _http.GetFromJsonAsync<Film>($"api/film/{id}");
+            if (result != null)
+                return result;
+            throw new Exception("Film not found!");
+        }
+
     }
 }

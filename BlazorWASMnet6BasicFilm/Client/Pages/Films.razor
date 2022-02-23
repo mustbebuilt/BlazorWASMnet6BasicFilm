@@ -17,7 +17,7 @@
         @foreach (var film in FilmService.Films)
         {
             <tr>
-                <td>@film.FilmTitle</td>
+                <td><a href="SingleFilm/@film.FilmID">@film.FilmTitle</a></td>
                 <td>@film.FilmCertificate</td>
             </tr>
         }

@@ -6,5 +6,6 @@ namespace BlazorWASMnet6BasicFilm.Client.Services.FilmService
     {
         List<Film> Films { get; set; }
         Task GetAllFilms();
+        Task<Film> GetSingleFilm(int id);
     }
 }

@@ -24,5 +24,17 @@ namespace BlazorWASMnet6BasicFilm.Server.Controllers
         return Ok(allFilms);
     }
 
-}
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Film>> GetSingleFilm(int id)
+        {
+            var film = await _context.Films
+                .FirstOrDefaultAsync(f => f.FilmID == id);
+            if (film == null)
+            {
+                return NotFound("Sorry, no film here. :/");
+            }
+            return Ok(film);
+        }
+
+    }
 }
